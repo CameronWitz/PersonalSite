@@ -35,7 +35,7 @@ export default function NavBar() {
   return (
     <div
       id="backgroundContainer"
-      className={`fixed top-0 left-0 ${
+      className={`fixed top-0 left-0 z-50 ${
         shrinkBar ? "h-12" : "h-20"
       } w-screen flex  bg-purple-500 shadow-lg text-white transition-all duration-300 justify-between`}
     >
