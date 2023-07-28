@@ -19,7 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NavBar />
-        {children}
+        <div className="flex min-h-screen flex-col items-center justify-normal p-24 bg-white text-black">
+          {children}
+        </div>
       </body>
     </html>
   );
