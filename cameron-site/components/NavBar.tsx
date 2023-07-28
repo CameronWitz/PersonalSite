@@ -48,8 +48,7 @@ export default function NavBar() {
             icon={<CgProfile size="30" />}
             tooltip="View Resume"
             callback={() => {
-              /**TODO: */
-              router.push("/coming-soon");
+              router.push("/resume");
             }}
           />
           <NavBarElement
@@ -66,9 +65,12 @@ export default function NavBar() {
           onClick={() => {
             router.push("/");
           }}
-          className="flex text-center pr-24 my-auto font-bold text-xl mx-4 cursor-pointer transition-all ease-linear hover:scale-125"
+          className="flex group text-center pr-24 my-auto font-bold text-xl mx-4 cursor-pointer transition-all ease-linear duration-300 hover:scale-125"
         >
-          <span>{"Cameron Witz's Website"} </span>
+          <span className="">{"Cameron Witz's Website"} </span>
+          <span className="ml-20 -mt-6 nav-bar-tooltip group-hover:scale-75">
+            {"Back to Home"}
+          </span>
         </div>
 
         <div className="flex mx-4 my-auto">
