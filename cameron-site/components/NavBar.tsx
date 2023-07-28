@@ -22,13 +22,10 @@ export default function NavBar() {
       setShrinkBar(!shrinkBar);
     };
     window.addEventListener("scroll", scrollListener);
-    //TODO: remove test
-    // window.addEventListener("click", test);
 
     // cleanup function
     return () => {
       window.removeEventListener("scroll", scrollListener);
-      // window.removeEventListener("click", test);
     };
   }, [shrinkBar]);
 
@@ -36,14 +33,14 @@ export default function NavBar() {
     <div
       id="backgroundContainer"
       className={`fixed top-0 left-0 z-50 ${
-        shrinkBar ? "h-12" : "h-20"
-      } w-screen flex  bg-purple-500 shadow-lg text-white transition-all duration-300 justify-between`}
+        shrinkBar ? "h-16" : "h-24"
+      } w-screen flex  bg-purple-500 shadow-lg text-white`}
     >
       <div
         id="rowContainer"
-        className="w-screen flex flex-row  justify-between"
+        className=" flex flex-row  transition-all duration-300 w-screen justify-between"
       >
-        <div className="flex mx-4">
+        <div className="flex ml-4 justify-start" style={{ width: "33%" }}>
           <NavBarElement
             icon={<CgProfile size="30" />}
             tooltip="View Resume"
@@ -65,15 +62,16 @@ export default function NavBar() {
           onClick={() => {
             router.push("/");
           }}
-          className="flex group text-center pr-24 my-auto font-bold text-xl mx-4 cursor-pointer transition-all ease-linear duration-300 hover:scale-125"
+          className="flex justify-center group text-center  my-auto font-bold text-xl  cursor-pointer transition-all ease-linear duration-300 hover:scale-125"
+          style={{ width: "33%" }}
         >
-          <span className="">{"Cameron Witz's Website"} </span>
+          <span className="whitespace-nowrap">{"Cameron Witz's Website"} </span>
           <span className="ml-20 -mt-6 nav-bar-tooltip group-hover:scale-75">
             {"Back to Home"}
           </span>
         </div>
 
-        <div className="flex mx-4 my-auto">
+        <div className="flex my-auto mr-4 justify-end" style={{ width: "33%" }}>
           <NavBarElement
             icon={<FaLinkedin size="30" />}
             tooltip="View Linkedin"

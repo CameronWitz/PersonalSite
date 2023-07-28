@@ -13,6 +13,7 @@ export default function Home() {
         className="flex flex-col relative items-center justify-center mt-6  flex-wrap max-w-4xl"
         style={{
           width: "50%",
+          minWidth: "364px",
         }}
       >
         <h1 className="flex font-bold text-5xl">About me:</h1>

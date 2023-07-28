@@ -28,7 +28,7 @@ body {
 
 @layer components {
   .nav-bar-element {
-    @apply relative flex items-center justify-center h-12 w-12  my-auto mx-6 bg-purple-500 text-white
+    @apply relative flex items-center justify-center h-12 w-12  my-auto mx-3 bg-purple-500 text-white
     hover:bg-white hover:text-purple-500 rounded-3xl hover:rounded-xl transition-all duration-300 
     ease-linear cursor-pointer;
   }
