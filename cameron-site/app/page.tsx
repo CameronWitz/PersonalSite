@@ -34,11 +34,15 @@ export default function Home() {
           }
         </p>
 
-        <div className="flex my-8" style={{ width: "90%" }}>
+        <div className="flex my-8" style={{ width: "100%", height: "50vh" }}>
           <figure>
-            <video autoPlay={true} muted loop playsInline>
-              <source src="videos/marlios_loop.mp4" type="video/mp4" />
-            </video>
+            <iframe
+              src="https://drive.google.com/file/d/1D8qsInBf9Chn9arkz4Ah54MkGlV9x3Mc/preview?start=1&mute=1&loop=1"
+              width="100%"
+              height="100%"
+              allow="autoplay"
+            ></iframe>
+
             <figcaption>
               Reinforcement learning model for mario which generalizes to unseen
               actions. For more info please read our{" "}
