@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -32,6 +33,25 @@ export default function Home() {
             "Moreover, my exploration of AI and deep learning has been a fascinating journey. As a researcher and developer, I have contributed to projects involving Deep Reinforcement Learning, where I devised novel model architectures to enable agents to generalize to unseen actions at testing time. I'm eager to explore more applications of AI in web development and game creation to create intelligent and dynamic experiences."
           }
         </p>
+
+        <div className="flex my-8" style={{ width: "90%" }}>
+          <figure>
+            <video autoPlay={true} muted loop playsInline>
+              <source src="videos/marlios_loop.mp4" type="video/mp4" />
+            </video>
+            <figcaption>
+              Reinforcement learning model for mario which generalizes to unseen
+              actions. For more info please read our{" "}
+              <Link
+                className=" text-purple-600"
+                target="_blank"
+                href={"/uploads/MarliosReport.pdf"}
+              >
+                research paper
+              </Link>
+            </figcaption>
+          </figure>
+        </div>
 
         <p className="flex text-lg mt-4 indent-14 ">
           {
