@@ -28,12 +28,12 @@ body {
 
 @layer components {
   .nav-bar-element {
-    @apply relative flex items-center justify-center h-12 w-12  my-auto mx-3 bg-purple-500 text-white
-    hover:bg-white hover:text-purple-500 rounded-3xl hover:rounded-xl transition-all duration-300 
+    @apply relative flex items-center justify-center h-12 w-12  my-auto mx-0 md:mx-3 bg-slate-950 text-teal-500
+    hover:bg-teal-500 hover:text-slate-950 rounded-3xl hover:rounded-xl transition-all duration-300 
     ease-linear cursor-pointer;
   }
   .nav-bar-tooltip {
-    @apply absolute min-w-max m-2 p-2 rounded-md shadow-md bg-gray-700 text-xs font-bold transition-all
+    @apply absolute min-w-max m-1 p-2 rounded-md shadow-md bg-gray-700 text-xs font-bold transition-all
     duration-100 scale-0 origin-bottom top-12  text-white z-10;
   }
 }

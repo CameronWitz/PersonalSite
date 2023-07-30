@@ -34,7 +34,7 @@ export default function Home() {
           }
         </p>
 
-        <div className="flex my-8" style={{ width: "100%", height: "50vh" }}>
+        <div className="flex my-8" style={{ width: "100%", height: "30vw" }}>
           <figure>
             <iframe
               src="https://drive.google.com/file/d/1D8qsInBf9Chn9arkz4Ah54MkGlV9x3Mc/preview?start=1&mute=1&loop=1"
@@ -43,11 +43,11 @@ export default function Home() {
               allow="autoplay"
             ></iframe>
 
-            <figcaption>
+            <figcaption className="">
               Reinforcement learning model for mario which generalizes to unseen
               actions. For more info please read our{" "}
               <Link
-                className=" text-purple-600"
+                className=" text-blue-600 underline italic font-bold"
                 target="_blank"
                 href={"/uploads/MarliosReport.pdf"}
               >
@@ -57,7 +57,7 @@ export default function Home() {
           </figure>
         </div>
 
-        <p className="flex text-lg mt-4 indent-14 ">
+        <p className="flex text-lg mt-12 indent-14 ">
           {
             "I had an amazing experience as a Software Engineering Intern at Applovin, where I developed C# scripts in Unity Engine for a match-3 puzzle game. I also implemented new challenging mechanics and fixed bugs to ensure a smooth production environment. This experience fueled my passion for game development, and I'm excited to further explore the fusion of AI and game design to create captivating and immersive gaming experiences."
           }
